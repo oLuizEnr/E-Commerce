@@ -1,10 +1,21 @@
 body{
     margin: 0;
     font-family: Poppins;
+
+    & .whats{
+        position: fixed;
+        bottom: 5vh;
+        right: 1vw;
+        }
+
+        & img{
+            width: 5vw;
+            cursor: pointer;
+        }
 }
 .container{
-    width: 900px;
     margin: auto;
+    width: 60vw;
     max-width: 90vw;
     text-align: center;
     padding-top: 10px;
@@ -14,14 +25,48 @@ svg{
     width: 30px;
 }
 header {
-    height: 15vh;
+    height: 20vh;
     width: 99.1vw;
     background-color: #196E5C;
+    display: flex;
+    align-items: center;
+
+    & img{
+        background-color: #000;
+        border-radius: 1vw;
+        width: 5.5vw;
+        position: absolute;
+        left: 1.7vw;
+        cursor: pointer;
+    }
 }
 footer {
-    height: 10vh;
+    height: 25vh;
     width: 99.1vw;
     background-color: #000;
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    & .p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    
+        & p {
+        color: #fff;
+        font-size: 3vh; 
+        }
+    }
+
+    & img {
+        width: 5vh;
+        position: relative;
+        right: 25vw;
+        margin-right: 1vw;
+    }
 }
 .base{
     margin-top: 10vh;
@@ -32,6 +77,7 @@ footer {
 }
 .icon-cart{
     position: relative;
+    left: -1vw;
 }
 .icon-cart span{
     position: absolute;
@@ -44,7 +90,7 @@ footer {
     border-radius: 50%;
     color: #fff;
     top: 50%;
-    right: -20px;
+    left: 1.8vw;
 }
 .title{
     font-size: xx-large;
@@ -87,11 +133,13 @@ footer {
     color: #eee;
     position: fixed;
     top: 0;
-    right: -400px;
+    right: -406px;
     bottom: 0;
+    border-left: .2vw solid #000;
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     transition: .5s;
+    z-index: 10;
 }
 body.showCart .cartTab{
     right: 0;
@@ -109,7 +157,7 @@ body.showCart .container{
     grid-template-columns: repeat(2, 1fr);
 }
 .cartTab button{
-    background-color: #E6C55D;
+    background-color: #ffcc23;
     ;
     border: none;
     font-family: Poppins;
