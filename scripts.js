@@ -1,4 +1,4 @@
- // Seleciona os elementos do HTML necessários
+// Seleciona os elementos do HTML necessários
 let listProductHTML = document.querySelector('.listProduct'); // Lista de produtos
 let listCartHTML = document.querySelector('.listCart'); // Lista de produtos no carrinho
 let iconCart = document.querySelector('.icon-cart'); // Ícone do carrinho
