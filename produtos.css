@@ -1,0 +1,236 @@
+body{
+    margin: 0;
+    font-family: Poppins;
+
+    & .whats{
+        position: fixed;
+        bottom: 5vh;
+        right: 1vw;
+        }
+
+        & img{
+            width: 5vw;
+            cursor: pointer;
+        }
+}
+.container{
+    margin: auto;
+    width: 60vw;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+svg{
+    width: 30px;
+}
+header {
+    height: 20vh;
+    width: auto;
+    background-color: #186e5c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & img{
+        background-color: #000;
+        border-radius: 1vw;
+        width: 5.5vw;
+        cursor: pointer;
+    }
+
+    & a {
+        color: #fff;
+        font-size: 2vh;
+        text-decoration: none;
+        margin-left: 20vw;
+    }
+}
+footer {
+    height: 25vh;
+    width: 99.1vw;
+    background-color: #186e5c;
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    & .p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+    
+    & p {
+        color: #fff;
+        font-size: 3vh; 
+    }
+}
+.redesS {
+    width: 15vw;
+    position: absolute;
+    left: 8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.redesS img {
+    width: 6vh;
+}
+.logopb {
+    width: 5.5vw;
+    border-radius: 1vw;
+    position: absolute;
+    right: 16vw;
+}
+.base{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.icon-cart{
+    position: relative;
+    left: -1vw;
+}
+.icon-cart span{
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    left: 1.8vw;
+}
+.title{
+    font-size: xx-large;
+}
+.listProduct .item img{
+    height: 21vh;
+    width: 21vh;
+    background-color: #fff;
+    border: .15vw solid #adadad;
+    border-radius: 1vw;
+}
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3vw;
+    row-gap: 3.5vw;
+}
+.listProduct .item{
+    background-color: #228f7785;
+    border: .15vw solid #9c9c9c;
+    padding: 20px;
+    border-radius: 20px;
+}
+.listProduct .item h2{
+    font-weight: 500;
+    font-size: large;
+}
+.listProduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+.listProduct .item button{
+    background-color: #353432;
+    color: #eee;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+/* cart */
+.cartTab{
+    width: 400px;
+    background-color: #196E5C;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -406px;
+    bottom: 0;
+    border-left: .2vw solid #000;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+    z-index: 10;
+}
+body.showCart .cartTab{
+    right: 0;
+}
+body.showCart .container{
+    transform: translateX(-250px);
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab button{
+    background-color: #ffcc23;
+    ;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cartTab .close{
+    background-color: #eee;
+}
+.listCart .item img{
+    width: 100%;
+}
+.listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+@media only screen and (max-width: 992px) {
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
