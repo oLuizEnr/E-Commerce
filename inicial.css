@@ -2,24 +2,45 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
 }
 
 .content {
-    height: 550px;
-    width: 1917px;
+    height: 80vh;
+    width: 95vw;
     border-radius: 1px;
     overflow: hidden;
     position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    top: 20vh;
+    transform: translate(-50%, 0%);
+}
+
+header {
+    height: 20vh;
+    width: auto;
+    background-color: #196E5C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & img{
+        background-color: #000;
+        border-radius: 1vw;
+        width: 5.5vw;
+        cursor: pointer;
+    }
+
+    & a {
+        color: #fff;
+        font-size: 2vh;
+        text-decoration: none;
+        margin-left: 20vw;
+    }
 }
 
 .content .slide img {
-    height: 100vw;
-    width: 100vw;
+    size: 50vw;
 }
 
 .navigation {
@@ -32,7 +53,6 @@ body {
 }
 
 .bar {
-
     width: 15px;
     height: 15px;
     border: 2px solid #196E5C;
@@ -40,7 +60,6 @@ body {
     border-radius: 15px;
     cursor: pointer;
     transform: .5s ease;
-
 }
 
 .bar:hover {
@@ -60,6 +79,13 @@ input {
 .slide {
     width: 20%;
     transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img{
+        width: 100vw;
+    }
 }
 
 #slide1:checked ~ .s1 {
@@ -82,15 +108,6 @@ input {
     margin-left: -80%;
 }
 
-
-
-
-
-.nav_bar{
-    width: 100vw; 
-    height: 20vh;  
-    background-color: #196E5C; 
-}
 
 .logo img{
     background-color: #111111;

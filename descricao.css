@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img{
+    background-color: #111111;
+    border-radius: 1vw;
+    width: 5.5vw;
+    cursor: pointer;
+    position: absolute;
+    top: 2.5vh;
+    left: 1vw;
+}
+
+.produtos{
+    position: absolute;
+    top: 6vh;
+    left: 25vw;
+    font-size: 2.8svh;
+}
+
+.titulo{
+    position: absolute;
+    top: 99vh;
+    left: 1vw;
+}
+
+.texto1{
+    position: absolute;
+    top: 108vh;
+    left: 1.1vw;
+
+    width: 55vw;
+    font-size: 0.95vw
+}
+
+header {
+    height: 20vh;
+    width: auto;
+    background-color: #196E5C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & img{
+        background-color: #000;
+        border-radius: 1vw;
+        width: 5.5vw;
+        cursor: pointer;
+    }
+
+    & a {
+        color: #fff;
+        font-size: 2vh;
+        text-decoration: none;
+        margin-left: 20vw;
+    }
+}
