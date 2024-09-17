@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Dosis:wght@200..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,27 +15,7 @@
     left: 1vw;
 }
 
-.produtos{
-    position: absolute;
-    top: 6vh;
-    left: 25vw;
-    font-size: 2.8svh;
-}
 
-.titulo{
-    position: absolute;
-    top: 99vh;
-    left: 1vw;
-}
-
-.texto1{
-    position: absolute;
-    top: 108vh;
-    left: 1.1vw;
-
-    width: 55vw;
-    font-size: 0.95vw
-}
 
 header {
     height: 20vh;
@@ -54,6 +36,122 @@ header {
         color: #fff;
         font-size: 2vh;
         text-decoration: none;
-        margin-left: 20vw;
+        margin-left: 12vw;
     }
+}
+
+
+.container p{
+    position: relative;
+    left: 56.3vw;
+    top: 13vh;
+    width: 40vw;
+    font-size: 0.99vw;
+    font-family: "Anek Latin", sans-serif;
+}
+
+.container img{
+    position: relative;
+    left: 2vw;
+    bottom: 18vh;
+    width: 47vw;
+    height: 45vh;
+    border-radius: 20px;
+}
+
+.container ul{
+    position: relative;
+    left: 56.3vw;
+    top: 18.5vh;
+    width: 30vw;
+    font-size: 0.99vw;
+    font-family: "Anek Latin", sans-serif;
+}
+
+.container button {
+    width: 13vw;
+    height: 6vh;
+    background-color: #228f7785;
+    border: solid 1px;
+    position: relative;
+    left: 22.5vw;
+    bottom: 5vh;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1vw;
+    font-family: "Anek Latin", sans-serif;
+}
+
+.container .divisoria{
+    position: absolute;
+    top: 27vh;
+    left: 52vw;
+    width: 0.001vw;  
+    height: 65vh;  
+    background-color: #196E5C; 
+    border: 0.1vw solid #196E5C; 
+}
+
+
+/*Carrosel */
+
+
+.navigation {
+    position: absolute;
+    bottom: 160px;
+    left: 850px;
+    display: flex;
+    top: 82vh;
+    left: 21.5vw;
+}
+
+.bar {
+
+    width: 15px;
+    height: 15px;
+    border: 2px solid #196E5C;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s ease;
+
+}
+
+.bar:hover {
+    background-color: #ffffff;
+}
+
+input {
+  display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .3s;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+} 
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+} 
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+} 
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+} 
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
 }

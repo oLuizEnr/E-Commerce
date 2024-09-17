@@ -67,6 +67,24 @@ footer {
         font-size: 3vh; 
     }
 }
+input {
+    height: 4vh;
+    width: 16vw;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.botaoPesquisa {
+    height: 4vh;
+    width: auto;
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    top: ;
+    left: ;
+    transform: translate(-50%, -50%);
+}
 .redesS {
     width: 15vw;
     position: absolute;

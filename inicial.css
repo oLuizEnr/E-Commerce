@@ -7,13 +7,9 @@ body {
 
 .content {
     height: 80vh;
-    width: 95vw;
+    width: auto;
     border-radius: 1px;
     overflow: hidden;
-    position: absolute;
-    left: 50%;
-    top: 20vh;
-    transform: translate(-50%, 0%);
 }
 
 header {
@@ -39,22 +35,61 @@ header {
     }
 }
 
+footer {
+    height: 25vh;
+    width: 99.1vw;
+    background-color: #186e5c;
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    & .p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+    
+    & p {
+        color: #fff;
+        font-size: 3vh; 
+    }
+}
+
+.redesS {
+    width: 15vw;
+    position: absolute;
+    left: 8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.redesS img {
+    width: 6vh;
+}
+
+.logopb {
+    width: 5.5vw;
+    border-radius: 1vw;
+    position: absolute;
+    right: 16vw;
+}
+
 .content .slide img {
     size: 50vw;
 }
 
 .navigation {
+    margin-top: 2%;
     position: absolute;
-    bottom: 160px;
-    left: 850px;
     display: flex;
-    top: 87vh;
-    left: 95vh;
+    left: 50%;
 }
 
 .bar {
-    width: 15px;
-    height: 15px;
+    width: 1vw;
+    height: 1vw;
     border: 2px solid #196E5C;
     margin: 6px;
     border-radius: 15px;
@@ -73,7 +108,7 @@ input {
 .slides {
     display: flex;
     width: 500%;
-    height: 100%;
+    height: 60vh;
 }
 
 .slide {
@@ -81,10 +116,13 @@ input {
     transition: .3s;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 5vh;
+
+
 
     & img{
-        width: 100vw;
+        width: 80vw;
+        border-radius: 1vw;
     }
 }
 
@@ -119,24 +157,19 @@ input {
     left: 1vw;
 }
 
-.produtos{
-    position: absolute;
-    top: 6vh;
-    left: 25vw;
-    font-size: 2.8svh;
-}
-
-.titulo{
-    position: absolute;
-    top: 99vh;
-    left: 1vw;
-}
-
 .texto1{
-    position: absolute;
-    top: 108vh;
-    left: 1.1vw;
-
     width: 55vw;
-    font-size: 0.95vw
+    font-size: 0.95vw;
+}
+
+.trapezio{
+    width: 100%;
+    height: 75vh;
+    background-color: #fedac0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5vw;
 }
