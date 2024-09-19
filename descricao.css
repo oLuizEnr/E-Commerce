@@ -40,118 +40,74 @@ header {
     }
 }
 
-
-.container p{
-    position: relative;
-    left: 56.3vw;
-    top: 13vh;
-    width: 40vw;
-    font-size: 0.99vw;
-    font-family: "Anek Latin", sans-serif;
-}
-
-.container img{
-    position: relative;
-    left: 2vw;
-    bottom: 18vh;
-    width: 47vw;
-    height: 45vh;
-    border-radius: 20px;
-}
-
-.container ul{
-    position: relative;
-    left: 56.3vw;
-    top: 18.5vh;
-    width: 30vw;
-    font-size: 0.99vw;
-    font-family: "Anek Latin", sans-serif;
-}
-
-.container button {
-    width: 13vw;
-    height: 6vh;
-    background-color: #228f7785;
-    border: solid 1px;
-    position: relative;
-    left: 22.5vw;
-    bottom: 5vh;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1vw;
-    font-family: "Anek Latin", sans-serif;
-}
-
-.container .divisoria{
+.container{
+    width: 50%;
+    height: 50vh;
     position: absolute;
-    top: 27vh;
-    left: 52vw;
-    width: 0.001vw;  
-    height: 65vh;  
-    background-color: #196E5C; 
-    border: 0.1vw solid #196E5C; 
+    margin-top: 15vh;
+    right: 0%;
+    border-left: 0.1vw solid #196E5C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & p{
+        width: 40vw;
+        font-size: 0.99vw;
+        font-family: "Anek Latin", sans-serif;
+    }
+
+    & ul{
+        width: 30vw;
+        font-size: 0.99vw;
+        font-family: "Anek Latin", sans-serif;
+    }
+
+    & button{
+        width: 13vw;
+        height: 6vh;
+        background-color: #228f7785;
+        border: solid 1px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 1vw;
+        font-family: "Anek Latin", sans-serif;
+    }
 }
 
-
-/*Carrosel */
-
-
-.navigation {
+.container2{
+    width: 50%;
     position: absolute;
-    bottom: 160px;
-    left: 850px;
-    display: flex;
-    top: 82vh;
-    left: 21.5vw;
-}
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+    & .fotoPrincipal{
+        background-image: url("img/Brinco-1.2-removebg-preview.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 25vw;
+        height: 25vw;
+        border: .1vw solid #000;
+        border-radius: 20px;
+        margin-left: 1vw;
+    }
 
-.bar {
-
-    width: 15px;
-    height: 15px;
-    border: 2px solid #196E5C;
-    margin: 6px;
-    border-radius: 15px;
-    cursor: pointer;
-    transform: .5s ease;
-
-}
-
-.bar:hover {
-    background-color: #ffffff;
-}
-
-input {
-  display: none;
-}
-
-.slides {
-    display: flex;
-    width: 500%;
-    height: 100%;
-}
-
-.slide {
-    width: 20%;
-    transition: .3s;
-}
-
-#slide1:checked ~ .s1 {
-    margin-left: 0;
-} 
-
-#slide2:checked ~ .s1 {
-    margin-left: -20%;
-} 
-
-#slide3:checked ~ .s1 {
-    margin-left: -40%;
-} 
-
-#slide4:checked ~ .s1 {
-    margin-left: -60%;
-} 
-
-#slide5:checked ~ .s1 {
-    margin-left: -80%;
+    & .fotos{
+        display: flex;
+        flex-direction: column;
+    
+        & .foto{
+            width: 5vw;
+            margin-bottom: 1vw;
+            border-radius: 1vw;
+            border: .1vw solid #000;
+            cursor: pointer;
+        }
+    }
 }
