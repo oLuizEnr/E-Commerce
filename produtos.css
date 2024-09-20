@@ -57,7 +57,7 @@ header {
 
 footer {
     height: 25vh;
-    width: 99.1vw;
+    width: 98.7vw;
     background-color: #186e5c;
     margin-top: 30vh;
     display: flex;
@@ -87,13 +87,9 @@ input {
     transform: translate(-50%, -50%);
     transition: .5s;
 }
-
-.botaoPesquisa {
-    height: 4vh;
-    width: auto;
-    border-radius: 0 10px 10px 0;
+#nomeProduto {
+    background-color: #e6e5e5;
 }
-
 .redesS {
     width: 15vw;
     position: absolute;

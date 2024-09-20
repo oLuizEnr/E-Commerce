@@ -117,6 +117,43 @@ const addCartToHTML = () => {
     iconCartSpan.innerText = totalQuantity; // Atualiza a quantidade total de itens no ícone do carrinho
 }
 
+// Evento de clique no carrinho para aumentar ou diminuir a quantidade de itens
+listCartHTML.addEventListener('click', (event) => {
+    let positionClick = event.target; // Identifica onde o usuário clicou
+    if(positionClick.classList.contains('minus') || positionClick.classList.contains('plus')){ // Verifica se foi clicado para aumentar ou diminuir
+        let product_id = positionClick.parentElement.parentElement.dataset.id; // Obtém o ID do produto
+        let type = 'minus'; // Define a ação como 'diminuir'
+        if(positionClick.classList.contains('plus')){ // Se clicou no botão de aumentar, muda o tipo para 'aumentar'
+            type = 'plus';
+        }
+        changeQuantityCart(product_id, type); // Chama a função para alterar a quantidade do produto no carrinho
+    }
+})
+
+// Função para alterar a quantidade de itens no carrinho
+const changeQuantityCart = (product_id, type) => {
+    let positionItemInCart = cart.findIndex((value) => value.product_id == product_id); // Encontra o índice do produto no carrinho
+    if(positionItemInCart >= 0){ // Se o produto estiver no carrinho
+        let info = cart[positionItemInCart]; // Obtém as informações do item
+        switch (type) {
+            case 'plus': // Se for para aumentar a quantidade
+                cart[positionItemInCart].quantity = cart[positionItemInCart].quantity + 1;
+                break;
+        
+            default: // Se for para diminuir a quantidade
+                let changeQuantity = cart[positionItemInCart].quantity - 1; // Calcula a nova quantidade
+                if (changeQuantity > 0) { // Se a quantidade for maior que 0, atualiza
+                    cart[positionItemInCart].quantity = changeQuantity;
+                }else{ // Se a quantidade for 0, remove o item do carrinho
+                    cart.splice(positionItemInCart, 1);
+                }
+                break;
+        }
+    }
+    addCartToHTML(); // Atualiza o carrinho no HTML
+    addCartToMemory(); // Atualiza o carrinho no localStorage
+}
+
 // Inicializa o aplicativo
 const initApp = () => {
     fetch('products.json') // Busca os dados dos produtos de um arquivo JSON
