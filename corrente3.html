@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="stylesheet" href="corrente3.css">
+</head>
+<body>
+
+    <header>
+        <img src="img/logo2.jpeg">
+        <a href="produtos.html">Nossos produtos</a>
+        <a href="index.html">Sobre Nós</a>
+        <a href="">Sign in / Login</a>
+    </header>
+
+    <div class="container">
+
+        <p> <strong>Corrente de Ouro Amarelo:</strong><br><br>
+
+            Esta corrente de ouro amarelo 18k é a escolha perfeita para quem aprecia a elegância discreta. Com 45 cm de comprimento e um design clássico de elos intercalados, ela oferece um brilho sutil e um acabamento polido que complementa qualquer estilo. Leve e confortável, é ideal para usar sozinha ou com um pingente.
+            
+            Detalhes: <br> <br>
+            
+            <ul>
+                <li> Material: Prata 925</li> <br>
+                <li> Comprimento: 45 cm</li> <br>
+                <li>Design: Elos intercalados</li> <br>
+            </ul>
+           
+         </p>
+         <button btn>  Adicionar ao carrinho </button>
+         <div class="divisoria"></div>
+
+    </div>
+    <div class="container2">
+        <div class="fotos">
+            <img src="img/Corrente-3.2-removebg-preview.png" alt="" class="foto"onmouseover="mudar1()">
+            <img src="img/corrente3-1.jfif" alt="" class="foto" onmouseover="mudar2()">
+            <img src="img/corrente3-2.jfif" alt="" class="foto" onmouseover="mudar3()">
+        </div>
+        <div class="fotoPrincipal" id="foto"></div>
+    </div>
+    <script>
+        function mudar1(){
+            let principal = document.getElementById("foto"); //transforma a foto principal em uma variável
+            principal.style.backgroundImage = "url('img/Corrente-3.2-removebg-preview.png')"; //muda a imagem da foto principal
+        }
+
+        function mudar2(){
+            let principal = document.getElementById("foto");
+            principal.style.backgroundImage = "url('img/corrente3-1.jfif')";
+        }
+
+        function mudar3(){
+            let principal = document.getElementById("foto");
+            principal.style.backgroundImage = "url('img/corrente3-2.jfif')";
+        }
+    </script>
+</body>
+</html>

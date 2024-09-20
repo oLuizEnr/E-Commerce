@@ -3,121 +3,114 @@
         "id": 1,
         "name":" brinco-1",
         "price": 200,
-        "image": "img/Brinco-1.2-removebg-preview.png"
+        "image": "img/Brinco-1.2-removebg-preview.png",
+        "produto": "brinco1.html" 
     },
     {
         "id": 2,
         "name":" Brinco Relâmpago",
         "price": 250,
-        "image": "img/Brinco-2.2-removebg-preview.png"
+        "image": "img/Brinco-2.2-removebg-preview.png",
+        "produto": "brinco2.html" 
     },
     {
         "id": 3,
         "name":" brinco-3",
         "price": 290,
-        "image": "img/Brinco-3.2-removebg-preview.png"
+        "image": "img/Brinco-3.2-removebg-preview.png",
+        "produto": "brinco3.html" 
     },
     {
         "id": 4,
         "name":" brinco-4",
         "price": 200,
-        "image": "img/Brinco-4.2-removebg-preview.png"
+        "image": "img/Brinco-4.2-removebg-preview.png",
+        "produto": "brinco4.html" 
     },
     {
         "id": 5,
-        "name":" corrente",
+        "name":" Corrente-1",
         "price": 300,
-        "image": "img/Corrente-1.2-removebg-preview.png"
+        "image": "img/Corrente-1.2-removebg-preview.png",
+        "produto": "corrente1.html" 
     },
     {
         "id": 6,
-        "name":" joia-6",
+        "name":" Corrente-2",
         "price": 200,
-        "image": "img/Corrente-2.2-removebg-preview.png"
+        "image": "img/Corrente-2.2-removebg-preview.png",
+        "produto": "corrente2.html" 
     },
     {
         "id": 7,
-        "name":" joia-7",
+        "name":" Corrente-3",
         "price": 200,
-        "image": "img/Corrente-3.2-removebg-preview.png"
+        "image": "img/Corrente-3.2-removebg-preview.png",
+        "produto": "corrente2.html" 
     },
     {
         "id": 8,
-        "name":" joia-8",
+        "name":" Corrente-4",
         "price": 200,
-        "image": "img/Corrente-4.2-removebg-preview.png"
+        "image": "img/Corrente-4.2-removebg-preview.png",
+        "produto": "corrente4.html" 
     },
     {
         "id": 9,
-        "name":" joia-8",
+        "name":" Pulseira-1",
         "price": 200,
-        "image": "img/Pulseira-1.2-removebg-preview.png"
+        "image": "img/Pulseira-1.2-removebg-preview.png",
+        "produto": "pulseira1.html" 
     },
     {
         "id": 10,
-        "name":" joia-8",
+        "name":" Pulseira-2",
         "price": 200,
-        "image": "img/Pulseira-2.2-removebg-preview.png"
+        "image": "img/Pulseira-2.2-removebg-preview.png",
+        "produto": "pulseira2.html" 
     },
     {
         "id": 11,
-        "name":" joia-8",
+        "name":" Pulseira-3",
         "price": 200,
-        "image": "img/Pulseira-3.2-removebg-preview.png"
+        "image": "img/Pulseira-3.2-removebg-preview.png",
+        "produto": "pulseira3.html" 
     },
     {
         "id": 12,
-        "name":" joia-8",
+        "name":" Pulseira-4",
         "price": 200,
-        "image": "img/Pulseira-4.2-removebg-preview.png"
+        "image": "img/Pulseira-4.2-removebg-preview.png",
+        "produto": "pulseira4.html" 
     },
+   
     {
         "id": 13,
-        "name":" joia-8",
+        "name":" Escapulário-1",
         "price": 200,
-        "image": "img/"
+        "image": "img/Escapulario-1-removebg-preview.png",
+        "produto": "escapulario1.html" 
     },
     {
         "id": 14,
-        "name":" joia-8",
+        "name":" Escapulário-2",
         "price": 200,
-        "image": "img/"
+        "image": "img/Escapulario-2-removebg-preview.png",
+        "produto": "escapulario2.html"
     },
     {
         "id": 15,
-        "name":" joia-8",
+        "name":" Escapulário-3",
         "price": 200,
-        "image": "img/"
+        "image": "img/Escapulario-3-removebg-preview.png",
+        "produto": "escapulario3.html"        
     },
     {
         "id": 16,
-        "name":" joia-8",
+        "name":" Escapulário-4",
         "price": 200,
-        "image": "img/"
-    },
-    {
-        "id": 17,
-        "name":" joia-8",
-        "price": 200,
-        "image": "img/Escapulario-1-removebg-preview.png"
-    },
-    {
-        "id": 18,
-        "name":" joia-8",
-        "price": 200,
-        "image": "img/Escapulario-2-removebg-preview.png"
-    },
-    {
-        "id": 19,
-        "name":" joia-8",
-        "price": 200,
-        "image": "img/Escapulario-3-removebg-preview.png"
-    },
-    {
-        "id": 20,
-        "name":" joia-8",
-        "price": 200,
-        "image": "img/Escapulario-4-removebg-preview.png"
+        "image": "img/Escapulario-4-removebg-preview.png",
+        "produto": "escapulario4.html"
     }
 
 

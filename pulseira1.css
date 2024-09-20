@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Dosis:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img{
+    background-color: #111111;
+    border-radius: 1vw;
+    width: 5.5vw;
+    cursor: pointer;
+    position: absolute;
+    top: 2.5vh;
+    left: 1vw;
+}
+
+
+
+header {
+    height: 20vh;
+    width: auto;
+    background-color: #196E5C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & img{
+        background-color: #000;
+        border-radius: 1vw;
+        width: 5.5vw;
+        cursor: pointer;
+    }
+
+    & a {
+        color: #fff;
+        font-size: 2vh;
+        text-decoration: none;
+        margin-left: 12vw;
+    }
+}
+
+.container{
+    width: 50%;
+    height: 50vh;
+    position: absolute;
+    margin-top: 15vh;
+    right: 0%;
+    border-left: 0.1vw solid #196E5C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & p{
+        width: 40vw;
+        font-size: 0.99vw;
+        font-family: "Anek Latin", sans-serif;
+    }
+
+    & ul{
+        width: 30vw;
+        font-size: 0.99vw;
+        font-family: "Anek Latin", sans-serif;
+    }
+
+    & button{
+        width: 13vw;
+        height: 6vh;
+        background-color: #228f7785;
+        border: solid 1px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 1vw;
+        font-family: "Anek Latin", sans-serif;
+    }
+}
+
+.container2{
+    width: 50%;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+    & .fotoPrincipal{
+        background-image: url("img/Pulseira-1.2-removebg-preview.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 25vw;
+        height: 25vw;
+        border: .1vw solid #000;
+        border-radius: 20px;
+        margin-left: 1vw;
+    }
+
+    & .fotos{
+        display: flex;
+        flex-direction: column;
+    
+        & .foto{
+            width: 5vw;
+            margin-bottom: 1vw;
+            border-radius: 1vw;
+            border: .1vw solid #000;
+            cursor: pointer;
+        }
+    }
+}

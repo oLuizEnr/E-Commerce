@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produto</title>
-    <link rel="stylesheet" href="descricao.css">
+    <link rel="stylesheet" href="escapulario1.css">
 </head>
 <body>
 
     <header>
         <img src="img/logo2.jpeg">
-        <a href="">Nossos produtos</a>
-        <a href="">Sobre Nós</a>
+        <a href="produtos.html">Nossos produtos</a>
+        <a href="index.html">Sobre Nós</a>>
         <a href="">Sign in / Login</a>
     </header>
 
@@ -36,13 +36,27 @@
     </div>
     <div class="container2">
         <div class="fotos">
-            <img src="img/Brinco-1.2-removebg-preview.png" alt="" class="foto"onmouseover="mudar1()">
-            <img src="img/brinco1-1.jfif" alt="" class="foto" onmouseover="mudar2()">
-            <img src="img/brinco1-2.jfif" alt="" class="foto" onmouseover="mudar3()">
-            <img src="img/brinco1-3.jfif" alt="" class="foto" onmouseover="mudar4()">
+            <img src="img/Escapulario-1-removebg-preview.png" alt="" class="foto"onmouseover="mudar1()">
+            <img src="img/escapulario1-1.jfif" alt="" class="foto" onmouseover="mudar2()">
+            <img src="img/escapulario1-2.jfif" alt="" class="foto" onmouseover="mudar3()">
         </div>
         <div class="fotoPrincipal" id="foto"></div>
     </div>
-    <script src="descricao.js"></script>
+    <script>
+        function mudar1(){
+            let principal = document.getElementById("foto"); //transforma a foto principal em uma variável
+            principal.style.backgroundImage = "url('img/Escapulario-1-removebg-preview.png')"; //muda a imagem da foto principal
+        }
+
+        function mudar2(){
+            let principal = document.getElementById("foto");
+            principal.style.backgroundImage = "url('img/escapulario1-1.jfif')";
+        }
+
+        function mudar3(){
+            let principal = document.getElementById("foto");
+            principal.style.backgroundImage = "url('img/escapulario1-2.jfif')";
+        }
+    </script>
 </body>
 </html>
