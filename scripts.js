@@ -31,7 +31,7 @@ const addDataToHTML = (filteredProducts = products) => {
                 <a href="${product.produto}">
                 <img src="${product.image}" alt="">
                 <h2>${product.name}</h2>
-                <div class="price">$${product.price}</div>
+                <div class="price">R$${product.price}</div>
                 </a>
                 <button class="addCart" style="cursor:pointer">Comprar</button>`; // Monta o HTML do produto com nome, imagem, preço e botão
             listProductHTML.appendChild(newProduct); // Adiciona o novo produto à lista de produtos no HTML

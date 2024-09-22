@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name":" brinco-1",
+        "name":" Brinco ponto de luz cravejado",
         "price": 200,
         "image": "img/Brinco-1.2-removebg-preview.png",
         "produto": "brinco1.html" 
@@ -15,70 +15,70 @@
     },
     {
         "id": 3,
-        "name":" brinco-3",
+        "name":" Brinco Argola",
         "price": 290,
         "image": "img/Brinco-3.2-removebg-preview.png",
         "produto": "brinco3.html" 
     },
     {
         "id": 4,
-        "name":" brinco-4",
+        "name":" Bricno Cristal Quadrado",
         "price": 200,
         "image": "img/Brinco-4.2-removebg-preview.png",
         "produto": "brinco4.html" 
     },
     {
         "id": 5,
-        "name":" Corrente-1",
+        "name":" Corrente Veneziana",
         "price": 300,
         "image": "img/Corrente-1.2-removebg-preview.png",
         "produto": "corrente1.html" 
     },
     {
         "id": 6,
-        "name":" Corrente-2",
-        "price": 200,
+        "name":" Corrente Grumet",
+        "price": 550,
         "image": "img/Corrente-2.2-removebg-preview.png",
         "produto": "corrente2.html" 
     },
     {
         "id": 7,
-        "name":" Corrente-3",
+        "name":" Corrente Italiana",
         "price": 200,
         "image": "img/Corrente-3.2-removebg-preview.png",
         "produto": "corrente2.html" 
     },
     {
         "id": 8,
-        "name":" Corrente-4",
+        "name":" Corrente Elos",
         "price": 200,
         "image": "img/Corrente-4.2-removebg-preview.png",
         "produto": "corrente4.html" 
     },
     {
         "id": 9,
-        "name":" Pulseira-1",
+        "name":" Pulseira Cordão",
         "price": 200,
         "image": "img/Pulseira-1.2-removebg-preview.png",
         "produto": "pulseira1.html" 
     },
     {
         "id": 10,
-        "name":" Pulseira-2",
+        "name":" Pulseira Esteira",
         "price": 200,
         "image": "img/Pulseira-2.2-removebg-preview.png",
         "produto": "pulseira2.html" 
     },
     {
         "id": 11,
-        "name":" Pulseira-3",
+        "name":" Pulseira Fígaro",
         "price": 200,
         "image": "img/Pulseira-3.2-removebg-preview.png",
         "produto": "pulseira3.html" 
     },
     {
         "id": 12,
-        "name":" Pulseira-4",
+        "name":" Pulseira Scorpio",
         "price": 200,
         "image": "img/Pulseira-4.2-removebg-preview.png",
         "produto": "pulseira4.html" 
