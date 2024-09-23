@@ -14,7 +14,6 @@
         <a href="index.html">Sobre Nós</a>
         <a href="">Sign in / Login</a>
     </header>
-    <input type="text" id="nomeProduto" placeholder="Pesquisar" onkeyup="pesquisa()">
     <div class="container">
         <div class="base">
             <div class="title">Nossos Produtos</div>
@@ -26,11 +25,13 @@
                 <span>0</span>
             </div>
         </div>
+        <input type="text" id="nomeProduto" placeholder="Pesquisar" onkeyup="pesquisa()">
         <div class="listProduct"></div>
     </div>
     <div class="cartTab">
         <h1>Seus produtos</h1>
         <div class="listCart"></div>
+        <div class="totalPriceDisplay">Total: R$ <span id="totalPrice">0.00</span></div>
         <div class="btn">
             <button class="close">Voltar</button>
             <button class="checkOut">Comprar</button>

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    font-family: "Nunito", sans-serif;
+}
+
 body {
     margin: 0;
     font-family: Poppins;
@@ -77,18 +83,12 @@ footer {
     }
 }
 
-input {
+#nomeProduto {
+    background-color: #e6e5e5;
     height: 4vh;
     width: 16vw;
     border-radius: 1vw;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .5s;
-}
-#nomeProduto {
-    background-color: #e6e5e5;
+    margin-left: auto;
 }
 .redesS {
     width: 15vw;
@@ -121,32 +121,24 @@ input {
 .icon-cart {
     position: relative;
     left: -1vw;
-}
 
-.icon-cart span {
-    position: absolute;
-    background-color: red;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color: #fff;
-    top: 50%;
-    left: 1.8vw;
+    & span{
+        position: absolute;
+        background-color: red;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: #fff;
+        top: 50%;
+        left: 1.8vw;
+    }
 }
 
 .title {
     font-size: xx-large;
-}
-
-.listProduct .item img {
-    height: 21vh;
-    width: 21vh;
-    background-color: #fff;
-    border: .15vw solid #adadad;
-    border-radius: 1vw;
 }
 
 .listProduct {
@@ -156,32 +148,46 @@ input {
     row-gap: 3.5vw;
     position: relative;
     top: 15vh;
-}
 
-.listProduct .item {
-    background-color: #228f7785;
-    border: .15vw solid #9c9c9c;
-    padding: 20px;
-    border-radius: 20px;
-}
+    & .item{
+        background-color: #228f7785;
+        border: .15vw solid #9c9c9c;
+        padding: 20px;
+        border-radius: 20px;
+        transition: .5s;
 
-.listProduct .item h2 {
-    font-weight: 500;
-    font-size: large;
-}
+        & img{
+            height: 21vh;
+            width: 21vh;
+            background-color: #fff;
+            border: .15vw solid #adadad;
+            border-radius: 1vw;
+        }
 
-.listProduct .item .price {
-    letter-spacing: 7px;
-    font-size: small;
-}
+        & h2{
+            font-weight: 500;
+            font-size: large;
+        }
 
-.listProduct .item button {
-    background-color: #353432;
-    color: #eee;
-    border: none;
-    padding: 5px 10px;
-    margin-top: 10px;
-    border-radius: 20px;
+        & .price{
+            letter-spacing: .3vh;
+            font-size: medium;
+        }
+
+        & button{
+            background-color: #000;
+            color: #eee;
+            border: .3vh solid #000;
+            padding: 5px 10px;
+            margin-top: 10px;
+            border-radius: 20px;
+        }
+    }
+
+    & .item:hover{
+        scale: 1.1;
+        transition: .5s
+    }
 }
 
 /* cart */
@@ -219,6 +225,9 @@ body.showCart .container {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.btn button{
+    height: 8vh;
+}
 .cartTab button {
     background-color: #ffcc23;
     border: none;

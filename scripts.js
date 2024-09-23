@@ -31,7 +31,7 @@ const addDataToHTML = (filteredProducts = products) => {
                 <a href="${product.produto}">
                 <img src="${product.image}" alt="">
                 <h2>${product.name}</h2>
-                <div class="price">R$${product.price}</div>
+                <div class="price">R$ ${product.price}</div>
                 </a>
                 <button class="addCart" style="cursor:pointer">Comprar</button>`; // Monta o HTML do produto com nome, imagem, preço e botão
             listProductHTML.appendChild(newProduct); // Adiciona o novo produto à lista de produtos no HTML
@@ -88,16 +88,24 @@ const addCartToMemory = () => {
 const addCartToHTML = () => {
     listCartHTML.innerHTML = ''; // Limpa o conteúdo anterior do carrinho
     let totalQuantity = 0; // Variável para armazenar a quantidade total de itens
+    let totalPrice = 0; // Variável para armazenar o preço total dos itens
+
     if (cart.length > 0) { // Se houver itens no carrinho
         cart.forEach(item => {
-            totalQuantity = totalQuantity + item.quantity; // Soma a quantidade total de itens
+            totalQuantity += item.quantity; // Soma a quantidade total de itens
+            
+            let positionProduct = products.findIndex((value) => value.id == item.product_id); // Encontra o produto correspondente no array de produtos
+            let info = products[positionProduct]; // Obtém as informações do produto
+            
+            // Calcula o preço total do item
+            let itemTotalPrice = info.price * item.quantity;
+            totalPrice += itemTotalPrice; // Adiciona ao preço total
+
             let newItem = document.createElement('div'); // Cria um novo elemento div para cada item do carrinho
             newItem.classList.add('item'); // Adiciona a classe 'item'
             newItem.dataset.id = item.product_id; // Atribui o ID do produto como atributo de dados
-
-            let positionProduct = products.findIndex((value) => value.id == item.product_id); // Encontra o produto correspondente no array de produtos
-            let info = products[positionProduct]; // Obtém as informações do produto
             listCartHTML.appendChild(newItem); // Adiciona o novo item ao carrinho no HTML
+
             newItem.innerHTML = `
                 <div class="image">
                     <img src="${info.image}">
@@ -105,7 +113,7 @@ const addCartToHTML = () => {
                 <div class="name">
                     ${info.name}
                 </div>
-                <div class="totalPrice">$${info.price * item.quantity}</div> <!-- Exibe o preço total -->
+                <div class="totalPrice">R$ ${itemTotalPrice}</div> <!-- Exibe o preço total do item -->
                 <div class="quantity">
                     <span class="minus"><</span> <!-- Botão para diminuir a quantidade -->
                     <span>${item.quantity}</span> <!-- Quantidade atual -->
@@ -114,7 +122,12 @@ const addCartToHTML = () => {
             `;
         });
     }
-    iconCartSpan.innerText = totalQuantity; // Atualiza a quantidade total de itens no ícone do carrinho
+
+    // Atualiza a quantidade total de itens no ícone do carrinho
+    iconCartSpan.innerText = totalQuantity; 
+
+    // Exibe o preço total na interface
+    document.getElementById('totalPrice').innerText = totalPrice.toFixed(2); // Exibe o preço total formatado
 }
 
 // Evento de clique no carrinho para aumentar ou diminuir a quantidade de itens
